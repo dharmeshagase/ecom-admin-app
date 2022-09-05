@@ -217,7 +217,7 @@ export const Products = (props) => {
             {
               productDetails.productPictures.map((picture)=>
               <div key = {picture._id} className='productImageContainer'>
-              <img src={generatePublicImageUrl(picture.img)} alt =""></img>
+              <img src={picture.img} alt =""></img>
               </div>
             )}
             </div>
