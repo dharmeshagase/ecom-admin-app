@@ -49,7 +49,7 @@ function App() {
 
           {/* Publicly allowed routes */}
           <Route path="/signin" element={<Signin />}></Route>
-          <Route path="/signup" element={<Signup />}></Route>
+          {/* <Route path="/signup" element={<Signup />}></Route> */}
         </Routes>
       </BrowserRouter>
     </div>

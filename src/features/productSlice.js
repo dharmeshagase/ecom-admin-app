@@ -53,9 +53,9 @@ export const getAllProduct = createAsyncThunk('product/getall',
         return response;
     })
 export const addProduct = createAsyncThunk('product/create',
-    async (form) => {
+    async (form,{dispatch}) => {
         const response = await productService.addProduct(form);
-        return response;
+        return await dispatch(getAllProduct());
     }
 )
 export const deleteProductById = createAsyncThunk('product/deleteProductById',
@@ -88,7 +88,7 @@ export const productSlice = createSlice({
             console.log("Added")
             state.status = 'succeeded';
             state.error = null;
-            state.product = action.payload;
+            // state.product = action.payload;
             // console.log(action.payload);
         },
         [addProduct.pending]: (state) => {

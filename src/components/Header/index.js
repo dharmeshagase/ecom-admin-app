@@ -38,9 +38,9 @@ export const Header = (props) => {
       <li className='nav-item'>
         <NavLink className='nav-link' to="/signin">Signin</NavLink>
       </li>
-      <li className='nav-item'>
+      {/* <li className='nav-item'>
         <NavLink className='nav-link' to="/signup">Signup</NavLink>
-      </li>
+      </li> */}
       {/* <Nav.Link href="#deets">Sign In</Nav.Link> */}
     </Nav>);
 
