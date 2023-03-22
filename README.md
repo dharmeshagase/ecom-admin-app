@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the admin webiste for the flipkart clone and can be viewed here [Demo](https://flipkart-admin.onrender.com).
 
-## Available Scripts
+## Features
 
 In the project directory, you can run:
 
